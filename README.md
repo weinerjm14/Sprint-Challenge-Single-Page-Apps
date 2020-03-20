@@ -29,19 +29,21 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 > Answer:
 
+Benefits of client side routing include avoiding full page reload which allows for faster movement between "pages", Allowing for more rich interactions such as animations, transforms and transitions with more ease, lower hosting costs as static pages are normally cheaper (and often free) to host, Easy in deployment, forces business concerns and data access out of the UI and encourgaing a more service-focused mindset in UI/UX development, And allows for doing more with a single language making development faster and easier for most novice/junior level devs.
+
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ]  Create a forked copy of this project.
-- [ ]  Add TL as collaborator on GitHub.
-- [ ]  Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ]  Create a new Branch on the clone: `git checkout -b <firstName-lastName>`.
+- [ x]  Create a forked copy of this project.
+- [x]  Add TL as collaborator on GitHub.
+- [x ]  Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [x ]  Create a new Branch on the clone: `git checkout -b <firstName-lastName>`.
 - [ ]  Implement the project on this branch, committing changes regularly.
 - [ ]  Push commits: `git push origin <firstName-lastName>`.
 - [ ]  **LOOK** at your project directory and notice it's just a plain ol' React App that we've built using `create-react-app`.
-- [ ]  **RUN** `npm install` to retrieve the client-side dependencies.
-- [ ]  **RUN** `npm start` to fire up your React application.
+- [ x]  **RUN** `npm install` to retrieve the client-side dependencies.
+- [ x]  **RUN** `npm start` to fire up your React application.
 
 ### Exceeded rate limits?
 
