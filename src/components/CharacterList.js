@@ -5,7 +5,7 @@ import axios from "axios";
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
   const [characters, setCharacters] = useState([]);
-  ;
+  
   useEffect(() => {
     // TODO: Add API Request here - must run in `useEffect`
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
@@ -17,7 +17,7 @@ export default function CharacterList() {
       
     })
     .catch(error => {
-      console.log(error);
+      console.log("server error", error);
     });}
     getChars();
   }, []);
@@ -36,11 +36,26 @@ export default function CharacterList() {
     
   //   getMovies();
   // }, []);
-  // console.log('character list', characters)
+  console.log('character list', characters)
   return (
     <section className="character-list">
       <h2>TODO: `array.map()` over your state here!</h2>
-      
+      {characters.map((listcharacters) => {
+        return (
+          <div className="character-info" key={listcharacters.id}>
+          <h3>Character Name: {listcharacters.name}</h3>
+        <p className="species">Species: {listcharacters.species}</p>
+          </div>
+        )
+        
+      })}
     </section>
-  );
+  )
+  
+  
 }
+// function CharacterDetails ({characters}) {
+//   return(
+//     console.log('character list', characters)
+//   );
+// }
