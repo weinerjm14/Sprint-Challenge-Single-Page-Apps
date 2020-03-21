@@ -1,12 +1,16 @@
 import React from "react";
 
-import {Route} from "react-router-dom";
+import {Link} from "react-router-dom";
 import CharacterCard from "./CharacterCard";
-import Header from "./Header";
+// import Header from "./Header";
 
 export default function WelcomePage() {
   return (
      <header className="ui centered">
+       <nav>
+   <Link exact to="/" component={WelcomePage}>Home</Link>
+   <Link exact to="/characters" component={CharacterCard}>Characters</Link>
+   </nav>
       <h1 className="ui center">Rick &amp; Morty Fan Page</h1>
       <section className="welcome-page">
       <header>
@@ -16,9 +20,7 @@ export default function WelcomePage() {
           src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
           alt="rick"
         />
-        <nav>
         
-        </nav>
       </header>
       
     </section>
