@@ -7,7 +7,7 @@ import WelcomePage from "./WelcomePage";
 import styled from "styled-components";
 
 export default function Header() {
-  const styledNav = styled.nav`
+  const StyledNav = styled.nav`
     display: flex;
     flex-direction: row,
     justify-items: flex-end;
@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <div>
-    <styledNav>
+    <StyledNav>
       <section  className="title">
       <h1 className="ui center">Rick &amp; Morty Fan Page</h1>
       </section>
@@ -23,7 +23,7 @@ export default function Header() {
       <Link to="/" >Home</Link>
       <Link to="/characters" >Characters</Link>
       </section>
-      </styledNav>
+      </StyledNav>
       
       <Route  exact path="/" component={WelcomePage} />
       <Route path="/characters" component={CharacterList} />

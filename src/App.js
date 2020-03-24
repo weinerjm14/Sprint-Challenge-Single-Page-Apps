@@ -1,10 +1,10 @@
 import React from "react";
 // import {Route, Link} from "react-router-dom"
 import Header from "./components/Header.js";
-import CharacterList from "./components/CharacterList";
+// import CharacterList from "./components/CharacterList";
 // import CharacterCard from "./components/CharacterCard";
 
-import WelcomePage from "./components/WelcomePage";
+// import WelcomePage from "./components/WelcomePage";
 
 export default function App() {
   
