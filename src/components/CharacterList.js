@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import styled from "styled-components";
 import axios from "axios";
 
 export default function CharacterList() {
@@ -37,15 +37,24 @@ export default function CharacterList() {
   //   getMovies();
   // }, []);
   console.log('character list', characters)
+  const CharCard = styled.div `
+    display: flex;
+    justify-items: space-between;
+    border: 3px inset green;
+    margin: 2% 4%;
+    padding: 1%;
+  `;
+
+
   return (
     <section className="character-list">
-      <h2>TODO: `array.map()` over your state here!</h2>
+      
       {characters.map((listcharacters) => {
         return (
-          <div className="character-info" key={listcharacters.id}>
-          <h3>Character Name: {listcharacters.name}</h3>
-        <p className="species">Species: {listcharacters.species}</p>
-          </div>
+          <CharCard className="character-info" key={listcharacters.id}>
+          <h3>Character Name: {listcharacters.name}</h3><br />
+          <p className="species">Species: {listcharacters.species}</p>
+          </CharCard>
         )
         
       })}
