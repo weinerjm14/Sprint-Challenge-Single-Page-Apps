@@ -8,21 +8,25 @@ import styled from "styled-components";
 
 export default function Header() {
   const StyledNav = styled.nav`
-    display: flex;
-    flex-direction: row,
-    justify-items: flex-end;
+    display: flex;    
+    justify-content: space-between;
   `;
-
+  const StyledNavSec = styled.section`
+    display:flex;
+    justify-content: space-evenly;
+    width: 33%;
+    padding-right: 5%;
+  `;
   return (
     <div>
     <StyledNav>
       <section  className="title">
       <h1 className="ui center">Rick &amp; Morty Fan Page</h1>
       </section>
-      <section className="links">
+      <StyledNavSec className="links">
       <Link to="/" >Home</Link>
       <Link to="/characters" >Characters</Link>
-      </section>
+      </StyledNavSec>
       </StyledNav>
       
       <Route  exact path="/" component={WelcomePage} />
