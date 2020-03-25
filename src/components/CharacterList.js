@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import axios from "axios";
+import SearchForm from "./SearchForm";
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
@@ -39,7 +40,7 @@ export default function CharacterList() {
   console.log('character list', characters)
   const CharCard = styled.div `
     display: flex;
-    justify-items: space-between;
+    justify-content: space-between;
     border: 3px inset green;
     margin: 2% 4%;
     padding: 1%;
@@ -47,8 +48,10 @@ export default function CharacterList() {
 
 
   return (
+   
+   
     <section className="character-list">
-      
+       <SearchForm characters={characters} />
       {characters.map((listcharacters) => {
         return (
           <CharCard className="character-info" key={listcharacters.id}>
