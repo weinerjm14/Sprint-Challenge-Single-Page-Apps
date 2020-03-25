@@ -6,6 +6,12 @@ import SearchForm from "./SearchForm";
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
   const [characters, setCharacters] = useState([]);
+  const [searchChar, setSearchChar] = useState([]);
+  const characterSearch = characters.filter(character => {
+    return (
+      setSearchChar(search.value.toLower().indexof.character)
+    )
+  }
   
   useEffect(() => {
     // TODO: Add API Request here - must run in `useEffect`
