@@ -4,7 +4,11 @@ import CharacterList from "./CharacterList";
 import SearchForm from "./SearchForm";
 export default function CharacterCard(props) {
   return (
-  <SearchForm />
-  <CharacterList />
+    <div key={props.id}>
+      <p>{props.name}</p>
+      <p>{props.species}</p>
+      
+
+    </div>
   )
 }
