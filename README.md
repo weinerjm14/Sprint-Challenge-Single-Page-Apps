@@ -29,19 +29,21 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 > Answer:
 
+Benefits of client side routing include avoiding full page reload which allows for faster movement between "pages", Allowing for more rich interactions such as animations, transforms and transitions with more ease, lower hosting costs as static pages are normally cheaper (and often free) to host, Easy in deployment, forces business concerns and data access out of the UI and encourgaing a more service-focused mindset in UI/UX development, And allows for doing more with a single language making development faster and easier for most novice/junior level devs.
+
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ]  Create a forked copy of this project.
-- [ ]  Add TL as collaborator on GitHub.
-- [ ]  Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ]  Create a new Branch on the clone: `git checkout -b <firstName-lastName>`.
+- [ x]  Create a forked copy of this project.
+- [x]  Add TL as collaborator on GitHub.
+- [x ]  Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [x ]  Create a new Branch on the clone: `git checkout -b <firstName-lastName>`.
 - [ ]  Implement the project on this branch, committing changes regularly.
 - [ ]  Push commits: `git push origin <firstName-lastName>`.
 - [ ]  **LOOK** at your project directory and notice it's just a plain ol' React App that we've built using `create-react-app`.
-- [ ]  **RUN** `npm install` to retrieve the client-side dependencies.
-- [ ]  **RUN** `npm start` to fire up your React application.
+- [ x]  **RUN** `npm install` to retrieve the client-side dependencies.
+- [ x]  **RUN** `npm start` to fire up your React application.
 
 ### Exceeded rate limits?
 
@@ -55,7 +57,7 @@ If the [main API service](https://rickandmortyapi.com/documentation) goes down, 
 You can still be locked out - watch your [chrome devtools' network panel](https://developers.google.com/web/tools/chrome-devtools/network/reference) to make sure you aren't making too many requests.
 </details>
 
-
+...
 ## Minimum Viable Product (MVP)
 
 > The MVP of this project is broken up between a couple parts.
@@ -64,17 +66,17 @@ Construct a Single Page Application with React.
 **Your finished project must include all of the following requirements:**
 
 _Display Data from a Server API_
-- [ ]  Fetch a list of characters from the Rick and Morty API's Characters endpoint *`https://cors-anywhere.herokuapp.com/https://rickandmortyapi.com/api/character/`* and render them to the screen. _NOTE: https://cors-anywhere.herokuapp.com/ in front of the actual URL just let's us get around CORS errors that happen on the server._
-- [ ]  You must display at least one element for each character.
+- [ x]  Fetch a list of characters from the Rick and Morty API's Characters endpoint *`https://cors-anywhere.herokuapp.com/https://rickandmortyapi.com/api/character/`* and render them to the screen. _NOTE: https://cors-anywhere.herokuapp.com/ in front of the actual URL just let's us get around CORS errors that happen on the server._
+- [ x]  You must display at least one element for each character.
 
 _Add a Router to this application using [React Router](https://reacttraining.com/react-router/web/guides/quick-start)._
 
-- [ ]  Hook up the Welcome page(Home page) and a Characters page with React Router.
-- [ ]  Use a styling or component library for part of or all of your application. (Pick at least 1 of: [s](https://react-bootstrap.github.io/)tyled-components or Reactstrap).
+- [ x]  Hook up the Welcome page(Home page) and a Characters page with React Router.
+- [ x]  Use a styling or component library for part of or all of your application. (Pick at least 1 of: [s](https://react-bootstrap.github.io/)tyled-components or Reactstrap).
 
 _Add 'Search by Name' feature._
 
-- [ ]  Add the `<SearchForm />` component (see `./components/SearchForm.js`).
+- [ x]  Add the `<SearchForm />` component (see `./components/SearchForm.js`).
 - [ ]  Create a search form that will filter through the data displayed in the character list.
 
 ### **Required best practices:**
